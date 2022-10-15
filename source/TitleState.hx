@@ -640,22 +640,20 @@ class TitleState extends MusicBeatState
 					//FlxG.sound.music.stop();
 					FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
 					FlxG.sound.music.fadeIn(4, 0, 0.7);
-					createCoolText(['OS Engine by'], 45);
+					createCoolText(['Pain Edition by'], 45);
 				case 2:
-					addMoreText('weuz_', 45);
-					addMoreText('nelifs', 45);
-					addMoreText('Cooljer', 45);
+					addMoreText('Eren Kaya', 45);
 				case 3:
 					deleteCoolText();
 					createCoolText(['Forked', 'from'], 15);
 				case 4:
-					addMoreText('Psych Engine', 45);
+					addMoreText('OS Engine', 45);
 				case 6:
 					deleteCoolText();
-					createCoolText(['Psych Engine by'], 45);
-					addMoreText('Shadow Mario',45);
-					addMoreText('RiverOaken',45);
-					addMoreText('bbpanzu',45);
+					createCoolText(['OS Engine by'], 45);
+					addMoreText('weuz_', 45);
+					addMoreText('nelifs', 45);
+					addMoreText('Cooljer', 45);
 				case 8:
 					deleteCoolText();
 					createCoolText([curWacky[0]]);
@@ -664,13 +662,13 @@ class TitleState extends MusicBeatState
 				case 12:
 					deleteCoolText();
 				case 13:
-					addMoreText('Friday');
+					addMoreText('Bambi');
 				// credTextShit.visible = true;
 				case 14:
-					addMoreText('Night');
+					addMoreText('Pain');
 				// credTextShit.text += '\nNight';
 				case 15:
-					addMoreText('Funkin'); // credTextShit.text += '\nFunkin';
+					addMoreText('Edition'); // credTextShit.text += '\nFunkin';
 
 				case 16:
 					skipIntro();

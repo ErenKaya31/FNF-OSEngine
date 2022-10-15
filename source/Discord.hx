@@ -18,7 +18,7 @@ class DiscordClient
 		trace("Discord Client starting...");
 		
 		DiscordRpc.start({
-			clientID: "963344162600656947",
+			clientID: "964178964245528626",
 			onReady: onReady,
 			onError: onError,
 			onDisconnected: onDisconnected
@@ -46,8 +46,8 @@ class DiscordClient
 		DiscordRpc.presence({
 			details: "In the Menus",
 			state: null,
-			largeImageKey: 'icon',
-			largeImageText: "OS Engine — Modded Psych Engine"
+			largeImageKey: 'no_reason',
+			largeImageText: "Vs Bambi: Pain Edition"
 		});
 	}
 
