@@ -46,10 +46,10 @@ class FPS extends TextField
 		currentFPS = 0;
 		selectable = false;
 		mouseEnabled = false;
-		defaultTextFormat = new TextFormat("_sans", 14, color);
+		defaultTextFormat = new TextFormat(Assets.getFont("mods/fonts/vcr.ttf").fontName, 14, color);
 		autoSize = LEFT;
 		multiline = true;
-		text = "FPS: ";
+		text = "Framerate: ";
 
 		cacheCount = 0;
 		currentTime = 0;
@@ -82,12 +82,12 @@ class FPS extends TextField
 
 		if (currentCount != cacheCount /*&& visible*/)
 		{
-			text = "FPS: " + currentFPS;
+			text = "Framerate: " + currentFPS;
 			var memoryMegas:Float = 0;
 			
 			#if openfl
 			memoryMegas = Math.abs(FlxMath.roundDecimal(System.totalMemory / 1000000, 1));
-			text += "\nMemory: " + memoryMegas + " MB";
+			text += "\nCPU: " + memoryMegas + " MB";
 			#end
 
 			textColor = 0xFFFFFFFF;
